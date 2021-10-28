@@ -60,7 +60,7 @@ body {
 
 .cards_container {
   margin: 15rem auto;
-  width: clamp(20rem, 90%, 40rem);
+  width: clamp(20rem, 80%, 40rem);
   border-radius: 7px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -136,6 +136,8 @@ body {
 
 .left_div-button {
   border: none;
+  color: white;
+  font-size: 1rem;
   padding: 1rem 0 1rem 0;
   border-radius: 7px;
   font-family: var(--ff-primary);
@@ -192,8 +194,24 @@ footer p {
 @media screen and (max-width: 580px) {
   .cards_container {
     grid-template-columns: 1fr;
+    margin-top: 5rem;
+  }
+  .top_div,
+  .right_div,
+  .left_div {
+    padding: 2rem;
   }
   .top_div {
     grid-area: auto;
+  }
+  .top_div-title {
+    font-size: 1.2rem;
+  }
+  .top_div-subtitle {
+    font-size: 0.9rem;
+  }
+  .top_div-paragraph {
+    font-size: 0.9rem;
+    line-height: 200%;
   }
 }
